@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Spider</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/icons8-homem-aranha-novo-16.png" type="image/x-icon">
+</head>
+
+<body>
+  
+  <video autoplay loop muted plays-inline class="back-video">
+    <source src="img/spiderman-across-the-spider-verse-moewalls-com.mp4" type="video/mp4">
+</video>
+
+    <header>
+      <nav class="navigation">
+      
+
+        <button type="button" onclick="document.getElementById('popupL').style.display='none'" id="popupL" class="btnLogin-popup">ACESSAR</button>
+
+      </nav>
+    </header>
+
+
+
+    <div class="wrapper">
+      <button type="button" onclick="document.getElementById('popupL').style.display='block'" class="icon-close"><ion-icon name="close-outline"></ion-icon></button>
+      
+        <div class="form-box login">
+          <h2>Acesso</h2>
+          <div id='msgError'></div>
+          <form action="#">
+            <div class="input-box">
+              <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+              <input id="email" required>
+              <label id="emailLabel">Email</label>
+            </div>
+            <div class="input-box">
+              <span class="icon"><ion-icon name="document-lock-outline"></ion-icon></span>
+              <input id="password" required>
+              <label id="passwordLabel">Password</label>
+            </div>
+            <div class="remember-forgot">
+              <label><input type="checkbox">Remember me</label>
+              <a href="#">Forgot Password?</a>
+            </div>
+
+            <button onclick="entrar()" class="btn">Login</button>
+
+            <div class="login-register">
+              <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+            </div>
+          </form>
+        </div>
+        
+        <div class="form-box register">
+          <h2>Registration</h2>
+          <form action="#">
+            <div class="input-box">
+              <span class="icon">
+                <ion-icon name="person-outline"></ion-icon>
+              </span>
+              <input type="text" required>
+              <label>Username</label>
+            </div>
+            <div class="input-box">
+              <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+              <input class="email" required>
+              <label>Email</label>
+            </div>
+            <div class="input-box">
+              <span class="icon"><ion-icon name="document-lock-outline"></ion-icon></span>
+              <input class="password" required>
+              <label>Password</label>
+            </div>
+            <div class="remember-forgot">
+              <label><input type="checkbox">agree to the terms & conditions</label>
+              
+            </div>
+            <button type="submit" class="btn ">Register</button>
+            <div class="login-register">
+              <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+            </div>
+          </form>
+        </div>
+
+
+      </div>
+       
+      
+
+
+    </div>
+
+    <script src="js/script.js"></script>
+    <script  type = "module"src ="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> 
+<script nomodule src="https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
